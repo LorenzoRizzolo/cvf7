@@ -2,23 +2,19 @@
 <Panel left cover reveal visibleBreakpoint={960}>
     <View>
       <Page>
-        <Navbar title="Nome Cognome">
+        <Navbar>
+          <NavTitle>Nome cognome</NavTitle>
         </Navbar>
+
+        <div class="center">
+          <img src="images/common_user.png" alt="immagine">
+        </div>
 
         <List>
 
             {#each routes as r}
               {#if r.visible}
-                <ListItem tabLink link={r.path} on:click={()=>{
-                  let url = window.location.href
-                  let sp = url.split("#")
-                  if(sp.length>1){
-                    sp[1] = r.path
-                    history.pushState(null, '', sp.join("#"));
-                  }else{
-                    history.pushState(null, '', url+"#"+r.path);
-                  }
-                }} view=".view-main" panelClose>
+                <ListItem tabLink link={r.path} on:click={()=>{UpdateUrl(r.path)}} view=".view-main" panelClose>
                   <div class="item-title">
                     <Icon material={r.icon}/> 
                     {r.name}
@@ -39,6 +35,7 @@
     View,
     Page,
     Navbar,
+    NavTitle,
     Link,
     Block,
     Icon,
@@ -48,5 +45,13 @@
   } from 'framework7-svelte';
 
   import routes from '../js/routes';
+  import { UpdateUrl } from "../js/functions"
 
 </script>
+
+<style>
+  img{
+    width: 100px;
+    margin-top: 30px;
+  }
+</style>

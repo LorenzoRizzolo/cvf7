@@ -29,3 +29,15 @@
   content: '';
   z-index: 6000;
 }
+
+/* app css */
+.center{
+  text-align: center;
+}
+
+
+@media (max-width:630px){
+  .center_mobile{
+    text-align: center;
+  }
+}

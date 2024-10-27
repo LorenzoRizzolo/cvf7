@@ -1,5 +1,8 @@
-<Page name="home">
-  <!-- Top Navbar -->
+<svelte:head>
+  <title>At1</title>
+</svelte:head>
+
+<Page>
   <Navbar>
     <NavLeft>
       <Link iconIos="f7:menu" iconMd="material:menu" panelOpen="left" />

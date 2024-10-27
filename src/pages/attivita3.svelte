@@ -1,3 +1,7 @@
+<svelte:head>
+  <title>At3</title>
+</svelte:head>
+
 <Page name="home">
   <!-- Top Navbar -->
   <Navbar>
