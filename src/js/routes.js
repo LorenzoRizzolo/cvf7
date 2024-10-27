@@ -25,7 +25,7 @@ var routes = [
   {
     path: '/studio/',
     component: Studio,
-    name:"Studio",
+    name:"Studio/Esperienze",
     icon:"school",
     visible: true
   },

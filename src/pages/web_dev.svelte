@@ -1,5 +1,5 @@
 <svelte:head>
-  <title>Web Developer</title>
+  <title>Lorenzo Rizzolo - Web Developer</title>
 </svelte:head>
 
 <Page>
@@ -32,8 +32,25 @@
 
   </Block>
 
-  <Block strong inset> <h2>Progetti realizzati</h2></Block>
+  <Block strong inset> <h2>Tipologie di Siti Web</h2></Block>
+  <Block class={f7.device.desktop ? "grid grid-cols-2 grid-gap": ""}>
 
+    <Block strong inset class="web_info">
+      <BlockTitle>Web Application</BlockTitle>
+      Le Web Application sono delle vere e proprie applicazioni, installabili anche sui dispositivi mobili, in grado di gesitre dei dati, archiviarli e mantenerli.
+      <br> Per Web Application si intendono dei veri e propri siti web, ma che hanno funzioni intelligenti e complesse. 
+      <br> Molti dei progetti qui sotto sono Web Application.
+    </Block>
+
+    <Block strong inset class="web_info">
+      <BlockTitle>Statici</BlockTitle>
+      Un sito web statico è composto una o più pagine di presentazione, come può essere questo cv oppure altri siti che hanno solo scopo informativo per 
+      l'utente.
+    </Block>
+
+  </Block>
+
+  <Block strong inset> <h2>Progetti realizzati</h2></Block>
   <Block class={f7.device.desktop ? "grid grid-cols-2 grid-gap": ""}>
     {#each progetti as p}
       <Block strong inset class="web_info">

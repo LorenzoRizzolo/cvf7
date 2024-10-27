@@ -1,5 +1,5 @@
 <svelte:head>
-  <title>Studio</title>
+  <title>Lorenzo Rizzolo - Studio</title>
 </svelte:head>
 
 <Page name="home">
@@ -23,7 +23,7 @@
         <div class={"icon "+(p.finito?"tgreen":"tred")}><Icon material="schedule"/></div>
         <div>
           {p.finito?"Compleatato nel "+p.data:"Da completare"} <br>
-          {p.titolo}
+          <Icon material={p.icon}/> {p.titolo}
         </div>
       </div>
     </Block>
@@ -53,16 +53,31 @@
     {
       titolo:"Diploma terza media",
       data:"2019",
+      icon:"school",
       finito:true
     },
     {
       titolo:"Diploma in Informatica",
       data:"2024",
+      icon:"school",
+      finito:true
+    },
+    {
+      titolo:"Sviluppo di un gestionale per gli operai per RizzoloEnertech s.r.l.",
+      data:"2024",
+      icon:"construction",
+      finito:true
+    },
+    {
+      titolo:"Sviluppo di un gestionale per i documenti per RizzoloEnertech s.r.l.",
+      data:"2024",
+      icon:"construction",
       finito:true
     },
     {
       titolo:"Laurea in informatica",
       data:"",
+      icon:"school",
       finito:false
     }
   ]

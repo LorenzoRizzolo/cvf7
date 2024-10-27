@@ -53,7 +53,11 @@
         }}>Copia
       </Button>
     </Block>
-    <Block strong inset><Icon material="link"/> <a href="https://it.linkedin.com/in/lorenzo-rizzolo-4187a0224" target="_blank" rel="noopener noreferrer">Linkedin</a> <div></div></Block>  
+    <Block strong inset>
+      <Icon material="link"/> 
+      <Link target="_blank" noLinkClass external={true} href="https://it.linkedin.com/in/lorenzo-rizzolo-4187a0224">Linkedin</Link>
+      <div></div>
+    </Block>  
   </Block>
 
   <div>
@@ -65,7 +69,10 @@
       <h1>Web Developer</h1>
       <div>
         Mi occupo di sviluppare e progettare siti web di presentazione per aziende e personali. 
-        Un sito web automenta la professionalità della tua attività e ti permette di essere più visibile online.
+        Un sito web aumenta la professionalità della tua attività e ti permette di essere più visibile online.
+        
+        <br>Oltre a questo mi occupo anche di creare Web Application per la gestione di un'attività, archiviazione di documenti,
+        calendari per la coordinazione degli operai... e altre applicazioni su richiesta.
       </div>
       <br><Button tonal class="small" on:click={()=>{
         f7.views.main.router.navigate("/web_dev/");
@@ -75,6 +82,13 @@
 
     <Block strong inset class='activity'>
       <h1>Studio</h1>
+      <div>
+        Il mio percorso di informatico è iniziato All'Istituto Agnelli di Torino nel 2021, ho iniziato a scoprire cos'è la vera infromatica e 
+        cercarne l'utilità nella vita di tutti i giorni nelle aziende.
+        
+        <br> Partendo da qui nel giro di pochi anni, grazie all'esperienza, ho iniziato a sviluppare vere applicazioni utili e performanti per 
+        il lavoro, che tutt'ora sono in utilizzo. 
+      </div>
       <br><Button tonal class="small" on:click={()=>{
         f7.views.main.router.navigate("/studio/");
         UpdateUrl("/studio/")
