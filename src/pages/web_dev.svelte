@@ -19,20 +19,20 @@
   <Block class={f7.device.desktop ? "grid grid-cols-2 grid-gap": ""}>
 
     <Block strong inset class="web_info">
-      <BlockTitle>Chi è un Web Developer ?</BlockTitle>
+      <BlockTitle><Icon material="person"/> Chi è un Web Developer ?</BlockTitle>
       Un Web Develper è uno sviluppatore di siti online che realizza pagine web in grado di fornire informazioni agli utenti che visualizzano le pagine. <br>
       Esistono diverse tipologie di web developer e di progetti realizzabili.
     </Block>
 
     <Block strong inset class="web_info">
-      <BlockTitle>Di cosa mi occupo ?</BlockTitle>
+      <BlockTitle><Icon material="person"/> Di cosa mi occupo ?</BlockTitle>
       In particolare la mia attività mira alla realizzazione di gestionali, completamente online, per aziende o attività professionali. Realizziamo anche siti di 
       presentazione come Curriculum, presentazione di un'azienda o di un negozio.
     </Block>
 
   </Block>
 
-  <Block strong inset> <h2>Tipologie di Siti Web</h2></Block>
+  <Block strong inset> <h2><Icon material="language"/> Tipologie di Siti Web</h2></Block>
   <Block class={f7.device.desktop ? "grid grid-cols-2 grid-gap": ""}>
 
     <Block strong inset class="web_info">
@@ -50,11 +50,11 @@
 
   </Block>
 
-  <Block strong inset> <h2>Progetti realizzati</h2></Block>
+  <Block strong inset> <h2><Icon material="construction"/> Progetti realizzati</h2></Block>
   <Block class={f7.device.desktop ? "grid grid-cols-2 grid-gap": ""}>
     {#each progetti as p}
       <Block strong inset class="web_info">
-        <h3>{p.titolo}</h3>
+        <h3><Icon material="construction"/> {p.titolo}</h3>
         {p.desc}
         <br>Tempo di realizzazione: <span class="tempo">{p.tempo_h} H</span>
         <br><Link target="_blank" noLinkClass external={true} href={p.link}>{p.link}</Link>
@@ -67,6 +67,7 @@
 <script>
   import {
     Page,
+    Icon,
     Navbar,
     NavLeft,
     NavTitle,
