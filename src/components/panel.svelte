@@ -10,7 +10,14 @@
             {#each routes as r}
               {#if r.visible}
                 <ListItem tabLink link={r.path} on:click={()=>{
-                    history.pushState(null, '', r.path);
+                  let url = window.location.href
+                  let sp = url.split("#")
+                  if(sp.length>1){
+                    sp[1] = r.path
+                    history.pushState(null, '', sp.join("#"));
+                  }else{
+                    history.pushState(null, '', url+"#"+r.path);
+                  }
                 }} view=".view-main" panelClose>
                   <div class="item-title">
                     <Icon material={r.icon}/> 
@@ -36,7 +43,8 @@
     Block,
     Icon,
     List,
-    ListItem
+    ListItem,
+    f7
   } from 'framework7-svelte';
 
   import routes from '../js/routes';

@@ -72,8 +72,9 @@
     });
     // vai al link da esterno
     let url = window.location.href
-    let l = url.split("/").length
-    let page = l==5 ? "/"+url.split("/").at(-2)+"/" : "/"
+    let s = url.split("#")
+    console.log(s.length)
+    let page = s.length!=1 ? "/"+url.split("/").at(-2)+"/" : "/"
     f7.views.main.router.navigate(page)
   })
 
