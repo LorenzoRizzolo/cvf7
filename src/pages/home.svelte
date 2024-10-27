@@ -12,9 +12,11 @@
     <NavTitle>{f7.device.desktop ? "Home page" : "Lorenzo Rizzolo" }</NavTitle>
   </Navbar>
 
-  <Block inset>
-    <div class="center"><img src="/images/person_image.jpeg" alt=""></div>
-  </Block>
+  {#if !f7.device.desktop}
+    <Block inset>
+      <div class="center"><img src="/images/person_image.jpeg" alt=""></div>
+    </Block>
+  {/if}
 
   <Block class={f7.device.desktop ? "grid grid-cols-2 grid-gap": ""}>
     <Block strong inset><Icon material="account_circle"/> Lorenzo Rizzolo <div></div></Block>
@@ -110,10 +112,3 @@
   });
 </script>
 
-<style>
-  img {
-    width: 200px;
-    border-radius: 2000px;
-    margin-top: 30px;
-  }
-</style>

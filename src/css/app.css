@@ -39,6 +39,20 @@
   display: inline-block;
 }
 
+.tgreen{
+  color: rgb(0, 211, 0) ;
+}
+.tred{
+  color: rgb(255, 28, 28);
+}
+
+
+img {
+  width: 150px;
+  border-radius: 2000px;
+  margin-top: 10px;
+}
+
 @media (max-width:630px){
   .center_mobile{
     text-align: center;
@@ -46,13 +60,13 @@
 }
 
 @media (min-width:630px){
-  .block.grid > .block:not(.grid, .activity){
+  .block.grid > .block:not(.grid, .activity, .web_info){
     margin: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  .block.activity{
+  .block.activity, .block.web_info{
     margin: 0;
   }
 }

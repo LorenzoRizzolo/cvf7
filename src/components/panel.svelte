@@ -6,9 +6,11 @@
           <NavTitle>Lorenzo Rizzolo</NavTitle>
         </Navbar>
 
-        <div class="center">
-          <img src="images/person_image.jpeg" alt="immagine">
-        </div>
+        {#if f7.device.desktop}
+          <div class="center">
+            <img src="images/person_image.jpeg" alt="immagine">
+          </div>
+        {/if}
 
         <List strong inset>
 
@@ -51,7 +53,7 @@
 
 <style>
   img{
-    width: 100px;
+    width: 150px;
     margin-top: 30px;
     border-radius: 2000px;
   }
