@@ -1,0 +1,18 @@
+{
+  "cwd": "/home/maverick/cvf7",
+  "type": [
+    "web"
+  ],
+  "name": "CVF7",
+  "framework": "svelte",
+  "template": "split-view",
+  "bundler": "vite",
+  "cssPreProcessor": false,
+  "theming": {
+    "customColor": true,
+    "color": "#00ff0b",
+    "darkMode": true,
+    "iconFonts": true
+  },
+  "customBuild": false
+}

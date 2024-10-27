@@ -1,0 +1,20 @@
+#!/bin/bash
+
+DEFAULT_COMMIT_MESSAGE="Aggiunto"
+
+if [ $# -eq 0 ]; then
+    echo "Insert a comment please"
+    exit 1
+else
+    COMMIT_MESSAGE="$1"
+fi
+
+cd client
+npm run build
+
+cd ..
+
+git pull
+git add .
+git commit -m "$COMMIT_MESSAGE"
+git push
