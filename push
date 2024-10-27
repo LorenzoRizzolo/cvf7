@@ -9,10 +9,10 @@ else
     COMMIT_MESSAGE="$1"
 fi
 
-cd client
-npm run build
+# cd client
+# npm run build
 
-cd ..
+# cd ..
 
 git pull
 git add .
