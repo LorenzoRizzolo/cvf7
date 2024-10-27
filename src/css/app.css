@@ -35,6 +35,9 @@
   text-align: center;
 }
 
+.button.small{
+  display: inline-block;
+}
 
 @media (max-width:630px){
   .center_mobile{

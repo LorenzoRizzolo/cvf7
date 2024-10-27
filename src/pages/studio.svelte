@@ -1,5 +1,5 @@
 <svelte:head>
-  <title>At2</title>
+  <title>Studio</title>
 </svelte:head>
 
 <Page name="home">
@@ -8,7 +8,7 @@
     <NavLeft>
       <Link iconIos="f7:menu" iconMd="material:menu" panelOpen="left" />
     </NavLeft>
-    <NavTitle>Attività 2</NavTitle>
+    <NavTitle>Titoli di studio</NavTitle>
   </Navbar>
 
 

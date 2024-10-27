@@ -12,31 +12,59 @@
   </Navbar>
 
   <Block inset>
-    <div class="center_mobile"><img src="/images/common_user.png" alt=""></div>
+    <div class="center_mobile"><img src="/images/person_image.jpeg" alt=""></div>
   </Block>
 
-  <Block strong inset> Nome Cognome</Block>
-  <Block strong inset> Email</Block>
-  <Block strong inset> Telefono</Block>
-  <Block strong inset> Link1</Block>
-  <Block strong inset> Link2</Block>
+  <Block strong inset><Icon material="account_circle"/> Lorenzo Rizzolo</Block>
+  <Block strong inset ><Icon material="email"/> 
+    lorenzorizzolo@rizzolo.cloud
+    <Button class="small"
+      on:click={()=>{
+        var copyText = "lorenzorizzolo@rizzolo.cloud";
+        navigator.clipboard.writeText(copyText);
+        let t = f7.toast.create({
+          text: "Ho copiato la email nei tuoi appunti",
+          icon:'<i class="material-icons">check</i>',
+          position: 'center',
+          closeTimeout: 3000,
+        }); t.open();
+      }}>Copia
+    </Button>
+  </Block>
+  <Block strong inset><Icon material="phone"/> 
+    +39 3465133790
+    <Button class="small"
+      on:click={()=>{
+        var copyText = "+39 3465133790";
+        navigator.clipboard.writeText(copyText);
+        let t = f7.toast.create({
+          text: "Ho copiato il numero di telefono negli appunti",
+          icon:'<i class="material-icons">check</i>',
+          position: 'center',
+          closeTimeout: 3000,
+        }); t.open();
+      }}>Copia
+    </Button>
+  </Block>
+  <Block strong inset><Icon material="link"/> <a href="https://it.linkedin.com/in/lorenzo-rizzolo-4187a0224" target="_blank" rel="noopener noreferrer">Linkedin</a></Block>
 
   <div>
     <Block strong inset>
-      <h1>Attivita 2</h1>
-      
+      <h1>Web Developer</h1>
+      <Button tonal class="small" on:click={()=>{
+        f7.views.main.router.navigate("/web_dev/");
+        UpdateUrl("/web_dev/")
+        }}>Leggi di più</Button>
     </Block>
   </div>
 
   <div>
     <Block strong inset>
-      <h1>Attivita 3</h1>
-    </Block>
-  </div>
-
-  <div>
-    <Block strong inset>
-      <h1>Attivita 4</h1>
+      <h1>Studio</h1>
+      <Button tonal class="small" on:click={()=>{
+        f7.views.main.router.navigate("/studio/");
+        UpdateUrl("/studio/")
+        }}>Leggi di più</Button>
     </Block>
   </div>
   
@@ -51,11 +79,13 @@
   import {
     Page,
     Navbar,
+    Icon,
     NavLeft,
     NavTitle,
     Button,
     Link,
-    Block
+    Block,
+    f7
   } from 'framework7-svelte';
 
   onMount(() => {
@@ -66,5 +96,6 @@
 <style>
   img {
     width: 200px;
+    border-radius: 2000px;
   }
 </style>

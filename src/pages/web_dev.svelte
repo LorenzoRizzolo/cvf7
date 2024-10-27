@@ -1,14 +1,13 @@
 <svelte:head>
-  <title>At3</title>
+  <title>Web Developer</title>
 </svelte:head>
 
-<Page name="home">
-  <!-- Top Navbar -->
+<Page>
   <Navbar>
-    <NavLeft>
+    <NavLeft >
       <Link iconIos="f7:menu" iconMd="material:menu" panelOpen="left" />
     </NavLeft>
-    <NavTitle>Attività 3</NavTitle>
+    <NavTitle>Web Developer</NavTitle>
   </Navbar>
 
 
@@ -23,11 +22,13 @@
     NavTitleLarge,
     NavRight,
     Link,
+    Icon,
     Toolbar,
     Block,
     BlockTitle,
     List,
     ListItem,
-    Button
+    Button,
+    f7
   } from 'framework7-svelte';
 </script>

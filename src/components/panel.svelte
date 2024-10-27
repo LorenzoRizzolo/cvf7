@@ -3,14 +3,14 @@
     <View>
       <Page>
         <Navbar>
-          <NavTitle>Nome cognome</NavTitle>
+          <NavTitle>Lorenzo Rizzolo</NavTitle>
         </Navbar>
 
         <div class="center">
-          <img src="images/common_user.png" alt="immagine">
+          <img src="images/person_image.jpeg" alt="immagine">
         </div>
 
-        <List>
+        <List strong inset>
 
             {#each routes as r}
               {#if r.visible}
@@ -53,5 +53,6 @@
   img{
     width: 100px;
     margin-top: 30px;
+    border-radius: 2000px;
   }
 </style>

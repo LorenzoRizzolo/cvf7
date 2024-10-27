@@ -25,7 +25,7 @@
     colors: {
       primary: '#00ff0b',
     },
-    // darkMode: true,
+    darkMode: true,
     store: store, // App store
     routes: routes, // App routes
   };
