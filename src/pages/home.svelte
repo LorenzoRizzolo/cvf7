@@ -83,7 +83,7 @@
     <Block strong inset class='activity'>
       <h1>Studio</h1>
       <div>
-        Il mio percorso di informatico è iniziato All'Istituto Agnelli di Torino nel 2021, ho iniziato a scoprire cos'è la vera infromatica e 
+        Il mio percorso di informatico è iniziato All'Istituto Agnelli di Torino nel 2021, ho iniziato a scoprire cos'è la vera informatica e 
         cercarne l'utilità nella vita di tutti i giorni nelle aziende.
         
         <br> Partendo da qui nel giro di pochi anni, grazie all'esperienza, ho iniziato a sviluppare vere applicazioni utili e performanti per 
